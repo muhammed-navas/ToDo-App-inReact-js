@@ -1,0 +1,54 @@
+/* (A) SHARED */
+#todo-wrap, #todo-wrap * {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ 
+  }
+  
+  #todo-wrap input, .todo-item {
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 3px;
+    
+   
+  }
+  .todo-row{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+ 
+  /* (B) WRAPPER */
+  #todo-wrap {
+    background: #f2f2f2;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* (C) ROW ITEMS */
+  #todo-add, .todo-row {
+    display: flex;
+    align-items: stretch;
+  }
+  #todo-item, .todo-item {
+    flex-grow: 1;
+    background: rgb(214, 208, 208);
+ /*  background: rgb(119, 118, 118);    */ 
+    
+  }
+  .todo-item{
+    font-weight: 450;
+  }
+  #todo-save{
+    width: 69px;
+  }
+  .todo-item.todo-ok { background: #cffff4; }
+  .todo-item.editing { background: #fffdcf; }
+  #todo-save, .todo-del, .todo-edit, .todo-done {
+    color: #fff;
+    cursor: pointer;
+  }
+  .todo-del{ background: rgba(147, 119, 175, 0.452) }
+  .todo-edit { background: rgb(155, 192, 123); color:black; }
+  #todo-save, .todo-done { background:  rgba(60, 89, 58, 0.61) }
